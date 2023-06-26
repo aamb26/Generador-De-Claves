@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="139.0" prefWidth="407.0" spacing="10.0" style="-fx-background-color: #343A40;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.generadordeclaves.GeneradorDeClavesController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <Label alignment="CENTER" contentDisplay="CENTER" text="Generador De Contraseñas" textAlignment="CENTER" textFill="#ffc107" VBox.vgrow="ALWAYS">
+        <opaqueInsets>
+            <Insets />
+        </opaqueInsets>
+        <VBox.margin>
+            <Insets />
+        </VBox.margin>
+        <font>
+            <Font size="18.0" />
+        </font></Label>
+    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+        <children>
+
+            <PasswordField fx:id="textPassword" alignment="CENTER" disable="true" prefHeight="26.0" prefWidth="216.0" style="-fx-border-color: #FFC107;" HBox.hgrow="ALWAYS">
+                <HBox.margin>
+                    <Insets />
+                </HBox.margin>
+            <cursor>
+               <Cursor fx:constant="DEFAULT" />
+            </cursor>
+            </PasswordField>
+            <Spinner fx:id="spinnerLongitud" blendMode="SOFT_LIGHT" prefWidth="80.0" style="-fx-border-color: #FFC107;" HBox.hgrow="ALWAYS">
+                <valueFactory>
+                    <SpinnerValueFactory.IntegerSpinnerValueFactory max="100" min="4" />
+                </valueFactory>
+            <HBox.margin>
+               <Insets left="5.0" />
+            </HBox.margin>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+            </Spinner>
+        </children>
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
+    </HBox>
+
+    <HBox alignment="CENTER" prefHeight="26.0" prefWidth="218.0">
+        <children>
+            <Button fx:id="btn_copiar" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#copiar" styleClass="md-button" text="Copiar" textAlignment="CENTER">
+                <HBox.margin>
+                    <Insets left="10.0" />
+                </HBox.margin>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor></Button>
+            <Button fx:id="button_generar" mnemonicParsing="false" onAction="#btn_generar" styleClass="md-button" text="Generar" textAlignment="CENTER">
+                <HBox.margin>
+                    <Insets left="10.0" />
+                </HBox.margin>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor></Button>
+            <Button id="btnMostrar" fx:id="btn_mostrar" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#mostrar" styleClass="md-button" text="Mostrar">
+                <HBox.margin>
+                    <Insets left="10.0" />
+                </HBox.margin>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor></Button>
+        </children>
+    </HBox>
+</VBox>

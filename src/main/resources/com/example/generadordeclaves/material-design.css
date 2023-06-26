@@ -1,0 +1,18 @@
+
+.md-button {
+    -fx-background-color: #ffc107;
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+    -fx-font-family: "Roboto", sans-serif;
+    -fx-padding: 8px 16px;
+    -fx-border-radius: 2px;
+    -fx-background-radius: 2px;
+}
+
+.md-button:hover {
+    -fx-background-color: #ffa000;
+}
+
+.md-button:pressed {
+    -fx-background-color: #ff8f00;
+}
